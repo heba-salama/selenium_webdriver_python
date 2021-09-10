@@ -17,6 +17,7 @@ def test_register_success(browser):
     result_page = ResultPage(browser)
 
     home_page.load()
+    home_page.open_reg_page()
     register_page.user_registration(os.getenv('FIRST_NAME'), os.getenv('LAST_NAME'), os.getenv('EMAIL'),
                                     os.getenv('PASSWORD'), os.getenv('PASSWORD'))
 
