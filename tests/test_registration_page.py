@@ -28,7 +28,7 @@ def test_register_success(browser):
 
 def test_register_fail(browser):
     """ Test Register Page Elements """
-    print(test_register_success.__doc__)
+    print(test_register_fail.__doc__)
 
     register_page = RegistrationPage(browser)
     home_page = HomePage(browser)
